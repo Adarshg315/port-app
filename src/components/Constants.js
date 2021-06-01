@@ -29,7 +29,7 @@ export const links = {
     icon: <PhoneIcon style={{ fontSize: 40 }} />,
   },
   youtube: {
-    href: "h0ttps://www.youtube.com/channel/UCkEMeT43qAO3pElG2EzOS6w",
+    href: "https://www.youtube.com/channel/UCkEMeT43qAO3pElG2EzOS6w",
     icon: <YouTubeIcon style={{ fontSize: 40 }} />,
   },
 };
