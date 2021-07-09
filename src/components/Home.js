@@ -53,7 +53,7 @@ const Home = () => {
                 strings: [
                   "<h1>Adarsh Goyal</h1>",
                   "<h1>Full Stack Developer</h1>",
-                  "<h1>Let's Connect</h1>",
+                  "<h1>Let us Connect</h1>",
                 ],
                 autoStart: true,
                 loop: true,
