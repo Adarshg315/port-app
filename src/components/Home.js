@@ -52,14 +52,14 @@ const Home = () => {
                 deleteSpeed: "25",
                 strings: [
                   "<h1>Adarsh Goyal</h1>",
-                  "<h1>Full Stack Developer</h1>",
-                  "<h1>Let us Connect</h1>",
+                  "<h1>SDE-1 @GytWorkz</h1>",
+                  "<h1>Let's Connect</h1>",
                 ],
                 autoStart: true,
                 loop: true,
               }}
             />
-
+              
             {/* <img
               alt="github"
               src="https://github-readme-stats.vercel.app/api?username=adarshg315&show_icons=true"
