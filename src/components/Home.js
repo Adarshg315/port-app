@@ -52,7 +52,7 @@ const Home = () => {
                 deleteSpeed: "25",
                 strings: [
                   "<h1>Adarsh Goyal</h1>",
-                  "<h1>SDE-1 @GytWorkz</h1>",
+                  "<h1>SDE-1 at GytWorkz</h1>",
                   "<h1>Let's Connect</h1>",
                 ],
                 autoStart: true,
