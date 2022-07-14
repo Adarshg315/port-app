@@ -88,7 +88,8 @@ const Home = () => {
 						style={{
 							color: "#fff",
 							padding: "5px",
-							border: "2px solid green",
+							borderTop: "2px solid white",
+							borderBottom: "2px solid white",
 						}}
 					>
 						<Grid item>Working on :-</Grid>
@@ -108,7 +109,6 @@ const Home = () => {
 						style={{
 							color: "#fff",
 							padding: "15px",
-							border: "2px solid red",
 						}}
 					>
 						{Object.keys(techUsed).map((key, index) => {
@@ -137,8 +137,10 @@ const Home = () => {
 							style={{
 								color: "#fff",
 								padding: "5px",
-								border: "2px solid green",
+								borderTop: "2px solid white",
+								borderBottom: "2px solid white",
 								marginTop: "180px",
+								marginBottom: "10px",
 							}}
 						>
 							<Grid item style={{ backgroundColor: "" }}>
@@ -146,7 +148,7 @@ const Home = () => {
 							</Grid>
 						</Grid>
 						<Grid>
-							<div class="elfsight-app-1577b42d-525a-4d70-a645-48f93647b5ad"></div>
+							<div className="elfsight-app-1577b42d-525a-4d70-a645-48f93647b5ad"></div>
 						</Grid>
 						<Grid
 							container
