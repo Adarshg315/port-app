@@ -1,9 +1,10 @@
 import { ThemeProvider } from "@material-ui/core"
-import { Link, Grid, Typography, Fragment, clsx } from "../imports"
-import { links } from "./Constants"
+import { Link, Grid, Fragment, clsx } from "../imports"
+import { links, techUsed } from "./Constants"
 import { homeStyles } from "./HomeStyles"
 import Typewriter from "typewriter-effect"
 import { theme } from "./theme"
+import { SoudCloudWidget } from "./SoundCloudWidget"
 
 const Home = () => {
 	const classes = homeStyles()
@@ -12,19 +13,21 @@ const Home = () => {
 		<ThemeProvider theme={theme}>
 			<Fragment>
 				<Grid
-					className={clsx(classes.animatedUpItem, {
-						// [classes.animatedDownItem]: exit,
-					})}
+					className={clsx(classes.animatedUpItem)}
 					style={{
 						backgroundColor: "black",
-						height: "10vh",
+
+						height: "15vh",
 					}}
 				>
 					<Grid
 						container
 						justify="space-around"
 						alignItems="center"
-						style={{ color: "#fff", padding: "15px" }}
+						style={{
+							color: "#fff",
+							padding: "15px",
+						}}
 					>
 						{Object.keys(links).map((key, index) => {
 							return (
@@ -45,7 +48,7 @@ const Home = () => {
 					container
 					alignItems="center"
 					justify="center"
-					style={{ backgroundColor: "black", height: "85vh" }}
+					style={{ backgroundColor: "black", height: "40vh" }}
 				>
 					<Grid
 						item
@@ -72,17 +75,87 @@ const Home = () => {
 						</h1>
 					</Grid>
 				</Grid>
-
-				<Grid>
-					<Typography
-						component="div"
-						className={classes.animatedDownItem}
+				<Grid
+					style={{
+						backgroundColor: "black",
+						height: "5vh",
+					}}
+				>
+					<Grid
+						container
+						justify="space-around"
+						alignItems="center"
+						style={{
+							color: "#fff",
+							padding: "5px",
+							border: "2px solid green",
+						}}
+					>
+						<Grid item>Working on :-</Grid>
+					</Grid>
+				</Grid>
+				<Grid
+					className={classes.animatedDownItem}
+					style={{
+						backgroundColor: "black",
+						height: "80vh",
+					}}
+				>
+					<Grid
+						container
+						justify="space-around"
+						alignItems="center"
+						style={{
+							color: "#fff",
+							padding: "15px",
+							border: "2px solid red",
+						}}
+					>
+						{Object.keys(techUsed).map((key, index) => {
+							return (
+								<Grid item key={index}>
+									<Link
+										href={techUsed[key].href}
+										color="inherit"
+									>
+										{techUsed[key].icon}
+									</Link>
+								</Grid>
+							)
+						})}
+					</Grid>
+					<Grid
 						style={{
 							backgroundColor: "black",
 							height: "5vh",
-							color: "#fff",
 						}}
-					></Typography>
+					>
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+							style={{
+								color: "#fff",
+								padding: "5px",
+								border: "2px solid green",
+								marginTop: "180px",
+							}}
+						>
+							<Grid item style={{ backgroundColor: "" }}>
+								Tracks produced so far :-
+							</Grid>
+						</Grid>
+
+						<Grid
+							container
+							justify="space-around"
+							alignItems="center"
+						>
+							<Grid item xs>
+								<SoudCloudWidget title={"title"} />
+							</Grid>
+						</Grid>
+					</Grid>
 				</Grid>
 			</Fragment>
 		</ThemeProvider>
