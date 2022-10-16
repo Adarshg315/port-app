@@ -33,7 +33,6 @@ jobs:
                   path: build
             - name: Deploy to Firebase
             - uses: FirebaseExtended/action-hosting-deploy@v0
-            - run: firebase deploy
               with:
                   repoToken: "${{ secrets.GITHUB_TOKEN }}"
                   firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}"
