@@ -25,6 +25,7 @@ const Landing = () => {
 			<p>
 				<img src={NoPhone} alt="no cell phone svg" />
 			</p>
+			<small>...</small>
 		</div>
 	)
 }
