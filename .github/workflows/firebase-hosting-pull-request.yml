@@ -35,5 +35,8 @@ jobs:
               uses: w9jds/firebase-action@master
               with:
                   args: deploy --only hosting
+                  repoToken: "${{ secrets.GITHUB_TOKEN }}"
+                  projectId: port-analytics
+                  # firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}"
               env:
-                  FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}
+                  firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}
