@@ -32,11 +32,9 @@ jobs:
                   name: build
                   path: build
             - name: Deploy to Firebase
-              uses: w9jds/firebase-action@master
-              with:
-                  args: deploy --only hosting
-                  repoToken: "${{ secrets.GITHUB_TOKEN }}"
+            - uses: FirebaseExtended/action-hosting-deploy@v0
+                with:
+                  repoToken: '${{ secrets.GITHUB_TOKEN }}'
+                  firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}'
+                  channelId: live
                   projectId: port-analytics
-                  # firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}"
-              env:
-                  firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}
