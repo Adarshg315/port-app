@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.fd82222b.js",
+    "main.js": "/static/js/main.08cb24ec.js",
     "static/js/787.efe5f823.chunk.js": "/static/js/787.efe5f823.chunk.js",
     "index.html": "/index.html",
     "static/media/software-developer-work-on-computer-programmer-coder-svgrepo-com.svg": "/static/media/software-developer-work-on-computer-programmer-coder-svgrepo-com.d5ccd488cb122ceedec5fc0aa39123e3.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.fd82222b.js.map": "/static/js/main.fd82222b.js.map",
+    "main.08cb24ec.js.map": "/static/js/main.08cb24ec.js.map",
     "787.efe5f823.chunk.js.map": "/static/js/787.efe5f823.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.fd82222b.js"
+    "static/js/main.08cb24ec.js"
   ]
 }
