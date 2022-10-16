@@ -33,8 +33,8 @@ jobs:
                   path: build
             - name: Deploy to Firebase
             - uses: FirebaseExtended/action-hosting-deploy@v0
-                with:
-                  repoToken: '${{ secrets.GITHUB_TOKEN }}'
-                  firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}'
+              with:
+                  repoToken: "${{ secrets.GITHUB_TOKEN }}"
+                  firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORT_ANALYTICS }}"
                   channelId: live
                   projectId: port-analytics
