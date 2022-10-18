@@ -1,5 +1,13 @@
 import NoPhone from "../../src/assests/icons/software-developer-work-on-computer-programmer-coder-svgrepo-com.svg"
+import ReactGA from "react-ga"
+import { useEffect } from "react"
+
 const Landing = () => {
+	useEffect(() => {
+		ReactGA.initialize(process.env.REACT_APP_TRACKING_ID)
+		ReactGA.pageview(window.location.pathname)
+	}, [])
+
 	return (
 		<div
 			style={{
